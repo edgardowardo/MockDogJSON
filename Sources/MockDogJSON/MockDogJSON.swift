@@ -1,16 +1,16 @@
-struct MockDogJSON {
+public struct MockDogJSON {
         
     /// https://dog.ceo/api/breed/hound/images/random
-    static let houndSingle = """
+    public static let houndSingle = """
     {
         "message": "https://images.dog.ceo/breeds/hound-english/n02089973_255.jpg",
         "status": "success"
     }    
     """
-    static let houndSingleBad = "Bad JSON"
+    public static let houndSingleBad = "Bad JSON"
     
     /// https://dog.ceo/api/breed/hound/afghan/images/random/10
-    static let houndList = """
+    public static let houndList = """
     {
         "message": [
             "https://images.dog.ceo/breeds/hound-afghan/n02088094_13145.jpg",
@@ -21,10 +21,10 @@ struct MockDogJSON {
     }    
     """
     
-    static let houndListBad = "Bad JSON"
+    public static let houndListBad = "Bad JSON"
 
     /// https://dog.ceo/api/breeds/list/all
-    static let breedsList = """
+    public static let breedsList = """
         {
             "message": {
                 "affenpinscher": [],
@@ -272,5 +272,5 @@ struct MockDogJSON {
         }
         """
     
-    static let breedsListBad = "Bad JSON"
+    public static let breedsListBad = "Bad JSON"
 }
